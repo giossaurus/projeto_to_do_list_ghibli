@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+.banner__fundo {
+    width: 100vw;
+    height: 100h;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__fundo video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.banner__conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner__conteudo h1{
+    margin: 0;
+    padding: 0;
+    font-size: 5.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
