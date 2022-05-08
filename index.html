@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Lista Animada de Howl</title>
     <link href="assets/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -16,22 +17,28 @@
             <div class="banner__conteudo">
             <h1 id="to__do">Lista do dia</h1>
 
-            <div id= cabecalho>
-                <div class="input__container">
-                    <input autocomplete="off" type="text" placeholder="Começe a anotar aqui" id="to__do-input">
-                    <label for="nome" class="lista__label"></label>
-                </div>
-                <button id="to__do-add-btn"></button>
-            </div>
-
-            <div>
-                <ul id="to__do-list">
-
-                </ul>
-            </div>
+        <div class="container">
+            <p>
+            <label for="new-task">Adicionar item</label><input id="new-task" type="text"><button>Adicionar</button>
+            </p>
+                
+            <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+                <li><input type="checkbox"><label>Pagar contas</label><input type="text"><button class="edit">Editar</button><button class="delete">Deletar</button></li>
+                <li class="editMode"><input type="checkbox"><label>Ir as compras</label><input type="text" value="Ir as compras"><button class="edit">Editar</button><button class="delete">Deletar</button></li>
+                  
+            </ul>
+                
+            <h3>Feito</h3>
+            <ul id="completed-tasks">
+                <li><input type="checkbox" checked><label>Texto teste</label><input type="text"><button class="edit">Editar</button><button class="delete">Deletar</button></li>
+            </ul>
+              </div>
     </div>
      
     <script src="script.js" > </script>
 </body>
 
 </html>
+
+
