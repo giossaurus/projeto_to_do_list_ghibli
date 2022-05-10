@@ -10,32 +10,47 @@
 </head>
 
 <body>
-    <div class="banner__fundo">
-        <video autoplay muted loop>
-            <source src="assets/videos/fundo_ghibli_loop.mp4" type="video/mp4">
-        </video>
-            <div class="banner__conteudo">
-            <h1 id="to__do">Lista do dia</h1>
+    <!--
+    <video autoplay muted loop id=videobg>
+        <source src="assets/videos/fundo_ghibli_loop.mp4" type="video/mp4">
+    </video>  
+    -->
+    <header>
+        <h1> Lista do Dia</h1>
+        <form id="nova-tarefa-form">
+            <input
+                    type="text"
+                    id="nova-tarefa-input"
+                    placeholder="O que você vai fazer hoje?" />
+            <input
+                    type="submit"
+                    id="nova-tarefa-submit"
+                    value="Adicionar a lista" /> <
+        </form>      
+    </header>
+    <main>
+        <section class="lista-tarefas">
+            <h2>Tarefas</h2>
 
-        <div class="container">
-            <p>
-            <label for="new-task">Adicionar item</label><input id="new-task" type="text"><button>Adicionar</button>
-            </p>
+            <div id="tarefas">
+                <div class="tarefa">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="Minha tarefa do dia"
+                            readonly/>
+                    </div>
+
+                <div class="acoes">
+                    <button class="editar">Editar</button>
+                    <button class="deletar">Deletar</button>    
+                </div>
                 
-            <h3>Todo</h3>
-            <ul id="incomplete-tasks">
-                <li><input type="checkbox"><label>Pagar contas</label><input type="text"><button class="edit">Editar</button><button class="delete">Deletar</button></li>
-                <li class="editMode"><input type="checkbox"><label>Ir as compras</label><input type="text" value="Ir as compras"><button class="edit">Editar</button><button class="delete">Deletar</button></li>
-                  
-            </ul>
-                
-            <h3>Feito</h3>
-            <ul id="completed-tasks">
-                <li><input type="checkbox" checked><label>Texto teste</label><input type="text"><button class="edit">Editar</button><button class="delete">Deletar</button></li>
-            </ul>
-              </div>
-    </div>
-     
+            </div>
+        </section>
+    </main>
+
     <script src="script.js" > </script>
 </body>
 
