@@ -6,34 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Lista Animada de Howl</title>
     <link href="assets/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--
-    <video autoplay muted loop id=videobg>
-        <source src="assets/videos/fundo_ghibli_loop.mp4" type="video/mp4">
-    </video>  
-    -->
-    <header>
-        <h1> Lista do Dia</h1>
+
+    <header class="header">
+        <h1> A Lista Animada de Howl</h1>
         <form id="nova-tarefa-form">
             <input
-                    type="text"
-                    id="nova-tarefa-input"
-                    placeholder="O que você vai fazer hoje?" />
+                type="text"
+                id="nova-tarefa-input"
+                placeholder="O que você vai fazer hoje?" />
             <input
-                    type="submit"
-                    id="nova-tarefa-submit"
-                    value="Adicionar a lista" /> <
+                type="submit"
+                id="nova-tarefa-submit"
+                value="Adicionar a lista"/> <
         </form>      
     </header>
     <main>
         <section class="lista-tarefas">
-            <h2>Tarefas</h2>
+            <h2>Tarefas do dia:</h2>
 
             <div id="tarefas">
-                <div class="tarefa">
+                <!--<div class="tarefa">
                     <div class="content">
                         <input 
                             type="text"
@@ -44,16 +40,19 @@
 
                 <div class="acoes">
                     <button class="editar">Editar</button>
-                    <button class="deletar">Deletar</button>    
-                </div>
-                
+                    <button class="deletar">Deletar</button> 
+                </div> --> 
+
             </div>
         </section>
     </main>
 
-    <script src="script.js" > </script>
-</body>
+    <video id="videobg"autoplay muted loop>
+        <source src="assets/videos/fundo_ghibli_loop.mp4" type="video/mp4">
+    </video>
 
+    <script src="script.js"></script>
+</body>
 </html>
 
 
