@@ -191,12 +191,3 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 768px) {
-  html{
-    background: url(./videos/fundo_ghibli_loop.mp4);
-    background-size: cover;
-  }
-
-  .video-container{
-    display:none;
-  }
