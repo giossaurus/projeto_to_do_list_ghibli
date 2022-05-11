@@ -13,32 +13,32 @@ window.addEventListener('load', () => {
             return;
         }
 
-        const tarefa_el = document.createElement("div");
-        tarefa_el.classList.add("tarefa");
+        const tarefa_el = document.createElement('div');
+        tarefa_el.classList.add('tarefa');
 
-        const tarefa_content_el = document.createElement("div");
-        tarefa_content_el.classList.add("content");
+        const tarefa_content_el = document.createElement('div');
+        tarefa_content_el.classList.add('content');
 
         tarefa_el.appendChild(tarefa_content_el);
 
-        const tarefa_input_el = document.createElement ("input");
-        tarefa_input_el.classList.add("text");
-        tarefa_input_el.type = "text";
+        const tarefa_input_el = document.createElement ('input');
+        tarefa_input_el.classList.add('text');
+        tarefa_input_el.type = 'text';
         tarefa_input_el.value = tarefa; 
-        tarefa_input_el.setAttribute ("readonly", "readonly");
+        tarefa_input_el.setAttribute ('readonly', 'readonly');
 
         tarefa_content_el.appendChild(tarefa_input_el);
 
-        const tarefa_acoes_el = document.createElement ("div");
-        tarefa_acoes_el.classList.add("acoes");
+        const tarefa_acoes_el = document.createElement ('div');
+        tarefa_acoes_el.classList.add('acoes');
 
-        const tarefa_editar_el = document.createElement("button");
-        tarefa_editar_el.classList.add("editar");
-        tarefa_editar_el.innerHTML = "Editar";
+        const tarefa_editar_el = document.createElement('button');
+        tarefa_editar_el.classList.add('editar');
+        tarefa_editar_el.innerHTML = 'Editar';
 
-        const tarefa_deletar_el = document.createElement("button");
-        tarefa_editar_el.classList.add("deletar");
-        tarefa_deletar_el.innerHTML = "Deletar";
+        const tarefa_deletar_el = document.createElement('button');
+        tarefa_editar_el.classList.add('deletar');
+        tarefa_deletar_el.innerHTML = 'Deletar';
 
         tarefa_acoes_el.appendChild(tarefa_editar_el);
         tarefa_acoes_el.appendChild(tarefa_deletar_el);
@@ -60,7 +60,7 @@ window.addEventListener('load', () => {
             }
         });
 
-        tarefa_deletar_el.addEventListener('click', () => {
+        tarefa_deletar_el.addEventListener('click', (e) => {
 
             list_el.removeChild(tarefa_el);
         });
