@@ -1,4 +1,4 @@
-![readme img](https://github.com/giossaurus/)
+![readme img](https://github.com/giossaurus/projeto_to_do_list_ghibli/blob/main/todo%20list%20readme.png)
 <br>
 
 
